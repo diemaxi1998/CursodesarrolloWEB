@@ -1,0 +1,1865 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap'); /*font-family: 'Luxurious Roman', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap'); /*font-family: 'Playfair Display', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /*font-family: 'The Nautigal', cursive*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap'); /*font-family: 'Inconsolata', monospace*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap'); /*font-family: 'Dancing Script', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap'); /*font-family: 'Orelega One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*font-family: 'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap'); /*font-family: 'Shippori Antique', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); /*font-family: 'Secular One', sans-serif;*/
+/*ACA APLIQUE SOBRE TODO A INDEX PERO ALGUNAS COSAS EN ESPECIFICAS LAS HARÉ ABAJO PARA CADA HTML*/
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.body-menos-presupuesto{ 
+    background-image: url(../fondos/135834-la_astrofotografa-x750.jpg);
+    background-size: 100%;
+}
+.body-presupuesto{
+background-image: url(../fondos/135834-la_astrofotografa-x750.jpg);
+background-size: 100%;
+}
+
+
+
+/*DESKTOP*/
+@media (min-width: 1024px){
+
+
+    
+    header h1 a{
+    color: rgb(255, 255, 255);   
+    font-size: 170%;
+    font-style: italic;
+    font-family: 'The Nautigal', cursive;    
+    text-decoration: none;
+}
+
+/*.firma{
+    color: white;
+    font-size: 30px;
+    font-family: 'The Nautigal', cursive;
+    margin-bottom: 2%;
+    margin-left: 26%;
+}*/
+
+nav{
+    background-color: rgb(2, 2, 2);
+    width: 100%;
+    /*border-top: solid 1px white;
+    border-bottom: solid 1px white;*/
+}
+
+nav ul li .lista1 {
+   /* background-color: rgb(25, 1, 34);*/
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150%;
+    padding:2% 5% 2% 5%;
+}
+
+nav ul li .lista1{
+    transition: font-size 1s;
+
+}
+
+
+
+
+ul li .lista1:hover{
+    background-color: white;
+    color: black;
+    font-size: 200%;
+
+}
+
+
+.menu-flex{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 15px 0px 15px 0;
+    list-style: none
+}
+
+.imagenes-grid{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+}
+.imagenes-grid img{
+    width: 70%;
+    height: 85%;
+    margin-left: 5% ;
+    margin-top: 10%;
+}
+
+/*section{
+    width: 100%;
+}*/
+
+
+
+
+
+.descripcion{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    /*background-color: black;*/
+    margin-top: 5%;
+    margin-left: 2%;
+
+}
+.masTrabajos{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    margin-left: 2%;
+}
+.masTrabajos a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.cierre{
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    text-align: right;
+    
+}
+.instagram{
+    color: white;
+}
+
+.logoMarca{
+    width: 66px
+}
+
+
+
+/*GRID AREAS*/
+
+#gridAreas{
+    display: grid;
+    grid-template-areas:
+    "logo marca menu";
+    grid-template-columns: 5% 45% 50%;
+    background-color:black;
+    border: red 1px solid;
+   position: fixed;
+    width: 100%;
+}
+
+
+
+.logoMarca{
+    grid-area: logo;
+}
+
+.brian{
+    grid-area: marca;
+    margin-left: 5px;
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+
+/*.firma{
+    grid-area: firma;
+}*/
+
+.menuGrid{
+    grid-area: menu;
+}
+
+
+.irArriba{
+    display: none;
+}
+
+
+
+.cierre{
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+
+/*HTML CLIENTES*/
+
+
+
+
+.clientes{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(155, 151, 151);
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 15px;
+    margin-left: 2%;
+
+}
+
+.parrafito1{
+    color: blanchedalmond;
+    /*background-color: black;*/
+    width:80%;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.parrafito2{
+    color: blanchedalmond;
+    background-color: rgba(189, 183, 107, 0.26);
+    margin-bottom: 1%;
+    margin-top: 3%;
+    width: 82%;
+    margin-left: 2%;
+}
+.parrafito2 a{
+    color: rgb(252, 252, 252);
+    font-size: 19px;
+    text-decoration: none;
+}
+p a:hover{
+    background-color: rgb(248, 248, 248);
+    color: black;
+}
+
+.galeria-grid{
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.galeria-grid img{
+    width: 75%;
+   margin-bottom: 8%;
+   margin-left: 10%;
+   margin-top: 8%;
+}
+
+
+
+    /*margin-right: 4%;
+    
+}*/
+
+.algunos{
+    color: white;
+    /*background-color: black;*/
+    font-size: 150%;
+    font-family: 'Luxurious Roman', cursive;
+    width: 45%;
+    margin-left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+/*HTML PRESUPUESTO*/
+
+.queremos{
+    color:rgb(247, 247, 247);
+    font-size: 200%;
+    font-family: 'Inconsolata', monospace;
+    margin-left: 2%;
+    margin-top: 8%;
+}
+
+.formulario{
+    color: white;
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+.idea{
+    color: white;
+    margin-left: 2%;
+}
+
+section fieldset form{
+    color: white;
+    margin-top: 2%;
+
+}
+
+section fieldset{
+    background-color: rgba(196, 61, 20, 0.26);
+    width: 45%;
+    height: 40vh;
+    margin-left: 2%;
+}
+
+.botonEnviar{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.primerLogoCostado2 img{
+    width: 40px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 14px;
+}
+.primerLogoCostado2{
+    margin-left: 75%;
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+    margin-top: 31%;
+}
+form{
+    margin-left: 3%;
+}
+.llenarNombre{
+    margin-left: 20%;
+}
+.llenarApellido{
+    margin-left: 19% ;
+}
+
+.llenarMail{
+    margin-left: 5%;
+}
+
+.llenarTelefono{
+    margin-left: 2%;
+}
+
+.llenarIdea{
+    margin-left: 3%;
+}
+
+
+
+
+
+/*Grid*/
+
+#presupuestoGRID{
+    display: grid;
+    grid-template-areas:
+    "informacion redes"
+    "form redes";
+    grid-template-columns: 75% 24%;
+}
+
+
+.informacion{
+    grid-area: informacion;
+
+}
+
+.formularioArea{
+    grid-area: form;
+
+}
+
+.primerLogoCostado2{
+    grid-area: redes;
+}
+
+
+
+
+
+
+
+
+
+
+/*HTML QUIENES SOMOS*/
+
+.quienes{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    margin-top: 8%;
+    font-size: 40px;
+    
+}
+.donde{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+}
+.mapita{
+    width: 50%;
+    height: 50vh;
+}
+
+.mediosDePago li{
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+.dolar{
+    color: green;
+    width: 250px;
+}
+.mercadoPago{
+    color:deepskyblue;
+    background-color: white;
+}
+
+.bank{
+    color: white;
+    background-color: black;
+}
+.parrafoRecomendaciones{
+    color: rgb(211, 202, 202);
+
+}
+
+p{
+    color: floralwhite;
+}
+
+h4{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    
+}
+
+section ul li i{
+    display: inline;
+}
+
+aside a .red{
+    width: 40px;
+    margin-right: 20px;
+
+}
+
+
+.primerLogoCostado img{
+    width: 40px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 14px;
+}
+.primerLogoCostado{
+    margin-top: 9%;
+    margin-left: 94%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.mp{
+    color: white;
+}
+
+
+
+/*GRID POR AREA*/
+
+#gridAREA{
+    display: grid;
+    grid-template-areas: 
+    "info none"
+    "mapa logos"
+    "medios logos";
+}
+    
+    
+
+/*NOMBRES GRID AREA*/
+
+.primerLogoCostado{
+    grid-area: logos;
+    position: fixed;
+}
+
+.iconosMedios{
+    grid-area: medios;
+    margin-left: 2%;
+}
+
+.ubicacion{
+    grid-area: mapa;
+    margin-left: 2%;
+}
+
+.info{
+    grid-area: info;
+    margin-left: 2%;
+    font-size: 18px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HTMTL RECOMENDACIONES*/
+
+
+.pregunta1{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.recomAntes ul{
+    width: 70%;
+    height: 30vh;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.venir{
+    font-family: 'Inconsolata', monospace;
+    width: 60%;
+    color: white;
+}
+
+.luego{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+.recomLuego ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+} 
+
+.recomLuego ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.recomLuego ul{
+    color: rgba(255, 255, 255, 0.664);
+    width: 82%;
+    list-style: none
+
+
+}
+
+.recomLogos-flex{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    margin-left: 94%;
+    position: fixed;
+    margin-top: 1%;
+}
+
+.recomLogos-flex a .red{
+    width: 40px;
+    margin-right: 20px;
+    margin-bottom: 22px;
+}
+
+.recomLogos-flex a .red1{
+    width: 50px;
+    margin-right: 35px;
+    margin-bottom: 22px;
+}
+
+
+
+/*GRID*/
+
+#recomdacionesGRID{
+    display: grid;
+    grid-template-areas: 
+    "hora contactos"
+    "antes contactos"
+    "luego contactos";
+    grid-template-columns:75% 25%;
+    margin-top: 5%;
+}
+
+
+.horaTatuaje{
+    grid-area: hora;
+    margin-left: 2%;
+}
+
+
+.recomAntes{
+    grid-area: antes;
+    margin-left: 2%;
+}
+
+.recomLuego{
+    grid-area: luego;
+    margin-left: 2%;
+    margin-top: 5%;
+
+}
+
+.recomLogos-flex{
+    grid-area: contactos;
+    width: 15%;
+}
+
+}
+
+
+/*TABLET*/
+
+
+@media (min-width: 321px) and (max-width: 1023px) { 
+    .body-menos-presupuesto{ 
+        background-image: url(../fondos/135834-la_astrofotografa-x750.jpg);
+        background-size: 100%;
+    }
+.body-presupuesto{
+    background-color: rgb(107, 59, 59);
+}
+
+    
+ header h1 a{
+    color: rgb(255, 255, 255);   
+    font-size: 170%;
+    font-style: italic;
+    font-family: 'The Nautigal', cursive;    
+    text-decoration: none;
+}
+
+/*.firma{
+    color: white;
+    font-size: 30px;
+    font-family: 'The Nautigal', cursive;
+    margin-bottom: 2%;
+    margin-left: 26%;
+}*/
+
+nav{
+    background-color: rgb(2, 2, 2);
+    width: 100%;
+    /*border-top: solid 1px white;
+    border-bottom: solid 1px white;*/
+}
+
+nav ul li .lista1 {
+   /* background-color: rgb(25, 1, 34);*/
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150%;
+    padding:2% 7% 2% 7%;
+}
+
+ul li .lista1:hover{
+    background-color: white;
+    color: black;}
+
+
+.menu-flex{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 15px 0px 15px 0;
+    list-style: none;
+}
+
+
+/*section{
+    width: 100%;
+}*/
+
+
+.imagenes-grid{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.imagenes-grid img{
+    width: 70%;
+    height: 85%;
+    margin-left: 5% ;
+    margin-top: 10%;
+}
+
+.descripcion{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    /*background-color: black;*/
+    margin-top: 1%;
+    margin-left: 2%;
+
+}
+.masTrabajos{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    margin-left: 2%;
+}
+.masTrabajos a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.cierre{
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    text-align: right;
+    
+}
+.instagram{
+    color: white;
+}
+
+.logoMarca{
+    width: 66px
+}
+
+
+
+/*GRID AREAS*/
+
+#gridAreas{
+    display: grid;
+    grid-template-areas:
+    "logo marca"
+    "none menu";
+    grid-template-columns: 10% 90%;
+    background-color:black;
+    border: red 1px solid;
+    width: 100%;
+}
+
+
+
+.logoMarca{
+    grid-area: logo;
+}
+
+.brian{
+    grid-area: marca;
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+
+/*.firma{
+    grid-area: firma;
+}*/
+
+.menuGrid{
+    grid-area: menu;
+}
+
+
+
+
+
+
+
+
+
+/*HTML CLIENTES*/
+
+.irArriba{
+    display: none;
+}
+
+.clientes{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(155, 151, 151);
+    font-size: 30px;
+    margin-top: 1%;
+    margin-bottom: 15px;
+    margin-left: 2%;
+
+}
+
+.parrafito1{
+    color: blanchedalmond;
+    /*background-color: black;*/
+    width:80%;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.parrafito2{
+    color: blanchedalmond;
+    background-color: rgba(189, 183, 107, 0.26);
+    margin-bottom: 1%;
+    margin-top: 3%;
+    width: 82%;
+    margin-left: 2%;
+}
+.parrafito2 a{
+    color: rgb(252, 252, 252);
+    font-size: 19px;
+    text-decoration: none;
+}
+p a:hover{
+    background-color: rgb(248, 248, 248);
+    color: black;
+}
+
+.galeria-grid{
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.galeria-grid img{
+    width: 80%;
+   margin-bottom: 8%;
+   margin-left: 10%;
+   margin-top: 8%;
+}
+    /*margin-right: 4%;
+    
+}*/
+
+.algunos{
+    color: white;
+    /*background-color: black;*/
+    font-size: 150%;
+    font-family: 'Luxurious Roman', cursive;
+    width: 45%;
+    margin-left: 2%;
+}
+
+
+
+
+
+/*HTML PRESUPUESTO*/
+
+.queremos{
+    color:rgb(247, 247, 247);
+    font-size: 200%;
+    font-family: 'Inconsolata', monospace;
+    margin-left: 2%;
+}
+.bodyPresupuesto{
+    background-color: rgb(107, 59, 59);
+}
+
+.formulario{
+    color: white;
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+.idea{
+    color: white;
+    margin-left: 2%;
+}
+
+section fieldset form{
+    color: white;
+    margin-top: 2%;
+
+}
+
+section fieldset{
+    background-color: rgba(196, 61, 20, 0.26);
+    width: 400px;
+    height: 45vh;
+    margin-left: 2%;
+}
+
+.botonEnviar{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.primerLogoCostado2 .red{
+    width: 30px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 14px;
+}
+
+.primerLogoCostado2 .red2{
+    width: 40px;
+    margin-top: 7px;
+}
+
+
+
+.primerLogoCostado2{
+    display: flex;
+    flex-direction: row;
+    width: 5%;
+    margin-top: 100px;
+}
+form{
+    margin-left: 3%;
+}
+.llenarNombre{
+    margin-left: 100px;
+}
+.llenarApellido{
+    margin-left: 98px ;
+}
+
+.llenarMail{
+    margin-left: 34px;
+}
+
+.llenarTelefono{
+    margin-left: 22px;
+}
+
+.llenarIdea{
+    margin-left: 25px;
+}
+
+.br-presupuesto{
+    display: none;
+}
+
+
+
+/*Grid*/
+
+#presupuestoGRID{
+    display: grid;
+    grid-template-areas:
+    "informacion "
+    "form "
+    "redes";
+    grid-template-columns: 100%;
+}
+
+
+.informacion{
+    grid-area: informacion;
+
+}
+
+.formularioArea{
+    grid-area: form;
+
+}
+
+.primerLogoCostado2{
+    grid-area: redes;
+}
+
+
+
+
+
+
+
+
+
+
+/*HTML QUIENES SOMOS*/
+
+.quienes{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    margin-top: 2%;
+    font-size: 40px;
+    
+}
+p{
+    color: ghostwhite;
+}
+.donde{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+}
+.mapita{
+    width: 75%;
+    height: 50vh;
+}
+
+.mediosDePago li{
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+.dolar{
+    color: green;
+    width: 250px;
+}
+.mercadoPago{
+    color:deepskyblue;
+    background-color: white;
+}
+
+.bank{
+    color: white;
+    background-color: black;
+}
+.parrafoRecomendaciones{
+    color: rgb(211, 202, 202);
+
+}
+
+
+
+h4{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    
+}
+
+section ul li i{
+    display: inline;
+}
+
+aside a .red{
+    width: 40px;
+    margin-right: 20px;
+}
+
+
+.primerLogoCostado .red1{
+    margin-right: 15px;
+    margin-top: 5px;
+
+    margin-left: 14px;
+}
+
+.primerLogoCostado .red{
+    width: 45px;
+    margin-top: 6px;
+}
+
+.primerLogoCostado{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.primerLogoCostado .red1{
+    width: 30px;
+}
+.espacioNosotros{
+    display: none;
+}
+
+
+
+.mp{
+    color: white;
+}
+
+
+
+/*GRID POR AREA*/
+
+#gridAREA{
+    display: grid;
+    grid-template-areas: 
+    "info"
+    "mapa"
+    "medios"
+    "logos";
+    grid-template-columns: 100%;
+}
+    
+    
+
+/*NOMBRES GRID AREA*/
+
+.primerLogoCostado{
+    grid-area: logos;
+    margin-top: 50px;
+
+}
+
+.iconosMedios{
+    grid-area: medios;
+    margin-left: 2%;
+}
+
+.ubicacion{
+    grid-area: mapa;
+    margin-left: 2%;
+}
+
+.info{
+    grid-area: info;
+    margin-left: 2%;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HTMTL RECOMENDACIONES*/
+
+
+.pregunta1{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.recomAntes ul{
+    width: 100%;
+    height: 30vh;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.753);
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.venir{
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    color: white;
+    margin-top: 5%;
+}
+
+.luego{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    margin-top: 5%;
+    
+}
+
+.recomLuego ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+} 
+
+.recomLuego ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.recomLuego ul{
+    color: rgba(255, 255, 255, 0.664);
+    width: 100%;
+    list-style: none
+
+
+}
+
+.recomLogos-flex{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 14px;
+}
+
+.recomLogos-flex a .red{
+    width: 30px;
+    margin-right: 19px;
+
+}
+
+.recomLogos-flex a .red1{
+    width: 45px;
+    margin-top: 4px;
+}
+
+
+
+/*GRID*/
+
+#recomdacionesGRID{
+    display: grid;
+    grid-template-areas: 
+    "hora"
+    "antes"
+    "luego"
+    "none"
+    "none"
+    "contactos";
+
+}
+
+
+.horaTatuaje{
+    grid-area: hora;
+    margin-left: 2%;
+}
+
+
+.recomAntes{
+    grid-area: antes;
+    margin-left: 2%;
+}
+.recomLuego{
+    grid-area: luego;
+    margin-left: 2%;
+
+}
+
+.recomLogos-flex{
+    grid-area: contactos;
+    margin-top: 10%;
+}
+}
+
+
+
+
+
+
+
+
+/***********MOVIL***********/
+
+@media (max-width: 320px){
+
+        
+        header h1 a{
+        color: rgb(255, 255, 255);   
+        font-size: 170%;
+        font-style: italic;
+        font-family: 'The Nautigal', cursive;    
+        text-decoration: none;
+    }
+    
+    nav{
+        background-color: rgb(2, 2, 2);
+        width: 100%;
+        /*border-top: solid 1px white;
+        border-bottom: solid 1px white;*/
+        display: flex;
+        justify-content:center;
+    }
+    
+    nav ul li .lista1 {
+       /* background-color: rgb(25, 1, 34);*/
+        text-decoration: none;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 150%;
+        padding:2% 5% 2% 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    ul li .lista1:hover{
+        background-color: white;
+        color: black;}
+    
+    
+    .menu-flex{
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin: 15px 0px 15px 0;
+        list-style: none
+    }
+    
+    .imagenes-grid{
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    
+    }
+    .imagenes-grid img{
+        width: 70%;
+        height: 85%;
+        margin-left: 11% ;
+        margin-top: 10%;
+    }
+    
+    
+    .descripcion{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        /*background-color: black;*/
+        margin-top: 5%;
+        margin-left: 2%;
+    
+    }
+    .masTrabajos{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        margin-left: 2%;
+    }
+    .masTrabajos a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    
+    .cierre{
+        color: #ffffff;
+        font-family: 'Dancing Script', cursive;
+        font-size: 15px;
+        text-align: right;
+        
+    }
+    .instagram{
+        color: white;
+    }
+    
+    .logoMarca{
+        width: 66px
+    }
+    
+    
+    
+    /*GRID AREAS*/
+    
+    #gridAreas{
+        display: grid;
+        grid-template-areas:
+        "logo marca" 
+        "menu menu";
+        grid-template-columns: 10% 90%;
+        background-color:black;
+        border: red 1px solid;
+        width: 100%;
+    }
+    
+    
+    
+    .logoMarca{
+        grid-area: logo;
+    }
+    
+    .brian{
+        grid-area: marca;
+        margin-left: 30px;
+    }
+    
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    
+    
+    
+    /*.firma{
+        grid-area: firma;
+    }*/
+    
+    .menuGrid{
+        grid-area: menu;
+    }
+    
+    
+    
+    
+    /*HTML CLIENTES*/
+    
+    
+    
+    
+    .clientes{
+        font-family: 'Inconsolata', monospace;
+        color: rgb(155, 151, 151);
+        font-size: 30px;
+        margin-top: 5%;
+        margin-bottom: 15px;
+        margin-left: 10%;
+
+    
+    }
+    
+    .parrafito1{
+        color: blanchedalmond;
+        /*background-color: black;*/
+        width:80%;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    
+    .parrafito2{
+        color: blanchedalmond;
+        margin-bottom: 1%;
+        margin-top: 3%;
+        width: 82%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .parrafito2 a{
+        color: rgb(252, 252, 252);
+        font-size: 19px;
+        text-decoration: none;
+    }
+    p a:hover{
+        background-color: rgb(248, 248, 248);
+        color: black;
+    }
+    
+    .galeria-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    }
+    
+    .galeria-grid img{
+        width: 75%;
+       margin-bottom: 8%;
+       margin-left: 10%;
+       margin-top: 8%;
+    }
+        /*margin-right: 4%;
+        
+    }*/
+    
+    .algunos{
+        color: white;
+        /*background-color: black;*/
+        font-size: 150%;
+        font-family: 'Luxurious Roman', cursive;
+        width: 45%;
+        margin-left: 2%;
+    }
+    
+    .irArriba{
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        margin-left: 40% ;
+        width: 20%;
+        font-size: 100%;
+        font-family: 'Shippori Antique', sans-serif;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*HTML PRESUPUESTO*/
+    
+    .queremos{
+        color:rgb(247, 247, 247);
+        font-size: 200%;
+        font-family: 'Inconsolata', monospace;
+        margin-left: 10%;
+        margin-top: 8%;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    
+    .formulario{
+        color: white;
+        margin-left: 2%;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    
+    .idea{
+        color: white;
+        margin-left: 2%;
+        margin-left: 10%;
+    }
+    
+    section fieldset form{
+        color: white;
+        margin-top: 2%;
+    
+    }
+    
+    section fieldset{
+        background-color: rgba(196, 61, 20, 0.26);
+        width: 100%;
+        height: 63vh;
+        margin-left: 2%;
+        margin-left: 10%;
+    }
+    
+    .botonEnviar{
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    
+    .primerLogoCostado2 img{
+        width: 40px;
+        margin-right: 15px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-left: 14px;
+        display: none;
+    }
+    .primerLogoCostado2{
+        margin-left: 75%;
+        display: flex;
+        flex-direction: column;
+        width: 5%;
+        margin-top: 31%;
+    }
+    form{
+        margin-left: 9%;
+    }
+    .llenarNombre{
+        margin-left: 0%;
+    }
+    .llenarApellido{
+        margin-left: 0% ;
+    }
+    
+    .llenarMail{
+        margin-left: 0%;
+    }
+    
+    .llenarTelefono{
+        margin-left: 0%;
+    }
+    
+    .llenarIdea{
+        margin-left: 0%;
+    }
+    
+    
+    
+    
+    
+    /*Grid*/
+    
+    #presupuestoGRID{
+        display: grid;
+        grid-template-areas:
+        "informacion redes"
+        "form redes";
+        grid-template-columns: 75% 24%;
+    }
+    
+    
+    .informacion{
+        grid-area: informacion;
+    
+    }
+    
+    .formularioArea{
+        grid-area: form;
+    
+    }
+    
+    .primerLogoCostado2{
+        grid-area: redes;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*HTML QUIENES SOMOS*/
+    
+    .quienes{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        margin-top: 8%;
+        font-size: 40px;
+        
+    }
+    .donde{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        font-size: 22px;
+    }
+    .mapita{
+        width: 90%;
+        height: 50vh;
+    }
+    
+    .mediosDePago li{
+        display: inline;
+        margin-right: 10px;
+        
+    }
+    
+    .dolar{
+        color: green;
+        width: 250px;
+    }
+    .mercadoPago{
+        color:deepskyblue;
+        background-color: white;
+    }
+    
+    .bank{
+        color: white;
+        background-color: black;
+    }
+    .parrafoRecomendaciones{
+        color: rgb(211, 202, 202);
+        margin-left: 10%;
+    }
+
+    p{
+        color: ghostwhite;
+    }
+    
+    h4{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        font-size: 22px;
+        
+    }
+    
+    section ul li i{
+        display: inline;
+    }
+    
+    aside a .red{
+        width: 40px;
+        margin-right: 20px;
+    
+    }
+    
+    
+    .primerLogoCostado .red1{
+        width: 20px;
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-left: 14px;
+    }
+
+    .primerLogoCostado .red{
+        margin-left: 10%;
+        margin-top: 21%;
+    }
+    .primerLogoCostado{
+        margin-top: 9%;
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        margin-left: 40%;
+    }
+
+    .espacioNosotros{
+        display: none;
+    }
+
+
+    .mp{
+        color: white;
+    }
+    
+    
+    
+    /*GRID POR AREA*/
+    
+    #gridAREA{
+        display: grid;
+        grid-template-areas: 
+        "info "
+        "mapa "
+        "medios"
+        "logos";
+        grid-template-columns: 100%;
+    }
+        
+        
+    
+    /*NOMBRES GRID AREA*/
+    
+    .primerLogoCostado{
+        grid-area: logos;
+    }
+    
+    .iconosMedios{
+        grid-area: medios;
+        margin-left: 2%;
+    }
+    
+    .ubicacion{
+        grid-area: mapa;
+        margin-left: 2%;
+    }
+    
+    .info{
+        grid-area: info;
+        margin-left: 2%;
+        font-size: 18px;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*HTMTL RECOMENDACIONES*/
+    
+    
+    .pregunta1{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        font-size: 120%;
+        margin-left: 10%;
+    }
+    
+    .recomAntes ul{
+        width: 100%;
+        height: 30vh;
+        color: rgba(255, 255, 255, 0.753);
+        margin-left: 10%;
+    }
+    
+    .venir{
+        font-family: 'Inconsolata', monospace;
+        width: 90%;
+        color: white;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    
+    .luego{
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        margin-top: 65%;
+        margin-left: 10%;
+        
+    }
+    
+    .recomLuego ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    
+    } 
+    
+    .recomLuego ul li a:hover{
+        background-color: white;
+        color: black;
+    }
+    .recomLuego ul{
+        color: rgba(255, 255, 255, 0.664);
+        width: 100%;
+        margin-left: 10%;
+    
+    
+    }
+    
+    .recomLogos-flex{
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-left: 94%;
+        position: fixed;
+        margin-top: 1%;
+        display: none;
+    }
+    
+    .recomLogos-flex a .red{
+        width: 40px;
+        margin-right: 20px;
+        margin-bottom: 22px;
+    }
+    
+    .recomLogos-flex a .red2{
+        width: 50px;
+        margin-right: 35px;
+        margin-bottom: 22px;
+    }
+    
+    
+    
+    /*GRID*/
+    
+    #recomdacionesGRID{
+        display: grid;
+        grid-template-areas: 
+        "hora contactos"
+        "antes contactos"
+        "luego contactos";
+        grid-template-columns:75% 25%;
+        margin-top: 5%;
+    }
+    
+    
+    .horaTatuaje{
+        grid-area: hora;
+        margin-left: 2%;
+    }
+    
+    
+    .recomAntes{
+        grid-area: antes;
+        margin-left: 2%;
+    }
+    
+    .recomLuego{
+        grid-area: luego;
+        margin-left: 2%;
+        margin-top: 5%;
+    
+    }
+    
+    .recomLogos-flex{
+        grid-area: contactos;
+        width: 15%;
+    }
+    
+    }
+
