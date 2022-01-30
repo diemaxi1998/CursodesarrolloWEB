@@ -65,19 +65,12 @@ nav ul li .lista1 {
     padding:2% 5% 2% 5%;
 }
 
-nav ul li .lista1{
-    transition: font-size 1s;
-
-}
-
-
 
 
 ul li .lista1:hover{
     background-color: white;
     color: black;
-    font-size: 200%;
-
+   
 }
 
 
