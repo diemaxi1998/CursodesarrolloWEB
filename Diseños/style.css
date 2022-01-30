@@ -71,8 +71,6 @@ nav ul li .lista1{
 }
 
 
-
-
 ul li .lista1:hover{
     background-color: white;
     color: black;
@@ -102,6 +100,7 @@ ul li .lista1:hover{
     height: 85%;
     margin-left: 5% ;
     margin-top: 10%;
+    
 }
 
 /*section{
@@ -208,11 +207,12 @@ header{
 
 .clientes{
     font-family: 'Inconsolata', monospace;
-    color: rgb(155, 151, 151);
+    color: rgb(219, 211, 211);
     font-size: 30px;
     margin-top: 5%;
     margin-bottom: 15px;
     margin-left: 2%;
+
 
 }
 
@@ -275,19 +275,15 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
 
-
-
-
-
-
 /*HTML PRESUPUESTO*/
 
-.queremos{
+.animate__animated{
     color:rgb(247, 247, 247);
     font-size: 200%;
     font-family: 'Inconsolata', monospace;
     margin-left: 2%;
     margin-top: 8%;
+    width: 100%;
 }
 
 .formulario{
@@ -319,13 +315,24 @@ section fieldset{
     margin-top: 2%;
 }
 
-.primerLogoCostado2 img{
-    width: 40px;
+.primerLogoCostado2 .red{
+    width: 30px;
     margin-right: 15px;
     margin-top: 5px;
     margin-bottom: 20px;
     margin-left: 14px;
 }
+
+.primerLogoCostado2 .red2{
+    width: 45px;
+    margin-left: 10px;
+    transition: width 1s;
+}
+
+.primerLogoCostado2 .red2:hover{
+    width: 60px;
+}
+
 .primerLogoCostado2{
     margin-left: 75%;
     display: flex;
@@ -451,20 +458,30 @@ section ul li i{
     display: inline;
 }
 
-aside a .red{
-    width: 40px;
-    margin-right: 20px;
+aside a .red{ /*ACÁ IMPLICA PRESUPUESTO Y RECOMENDACIONES*/
+    width: 45px;
+    margin-left: 5px;
+    transition: width 1s;
+}
+aside a .red:hover{
+    width: 60px;
 
 }
 
-
-.primerLogoCostado img{
-    width: 40px;
+.primerLogoCostado .red1{
+    width: 30px;
     margin-right: 15px;
     margin-top: 5px;
     margin-bottom: 20px;
     margin-left: 14px;
+    transition: width 1s;
 }
+
+.primerLogoCostado .red1:hover{
+    width: 45px;
+}
+
+
 .primerLogoCostado{
     margin-top: 9%;
     margin-left: 94%;
@@ -585,17 +602,21 @@ aside a .red{
 }
 
 .recomLogos-flex a .red{
-    width: 40px;
+    width: 30px;
     margin-right: 20px;
     margin-bottom: 22px;
 }
 
 .recomLogos-flex a .red1{
-    width: 50px;
-    margin-right: 35px;
+    width: 45px;
     margin-bottom: 22px;
+    margin-left: 1px;
+    transition: width 1s;
 }
 
+.recomLogos-flex a .red1:hover{
+    width: 60px;
+}
 
 
 /*GRID*/
@@ -640,7 +661,7 @@ aside a .red{
 /*TABLET*/
 
 
-@media (min-width: 321px) and (max-width: 1023px) { 
+@media (min-width: 481px) and (max-width: 1023px) { 
     .body-menos-presupuesto{ 
         background-image: url(../fondos/135834-la_astrofotografa-x750.jpg);
         background-size: 100%;
@@ -1261,7 +1282,7 @@ aside a .red{
 
 /***********MOVIL***********/
 
-@media (max-width: 320px){
+@media (max-width: 480px){
 
         
         header h1 a{
@@ -1487,7 +1508,7 @@ aside a .red{
     
     /*HTML PRESUPUESTO*/
     
-    .queremos{
+    .animate__animated{
         color:rgb(247, 247, 247);
         font-size: 200%;
         font-family: 'Inconsolata', monospace;
