@@ -640,7 +640,7 @@ aside a .red{
 /*TABLET*/
 
 
-@media (min-width: 321px) and (max-width: 1023px) { 
+@media (min-width: 481px) and (max-width: 1023px) { 
     .body-menos-presupuesto{ 
         background-image: url(../fondos/135834-la_astrofotografa-x750.jpg);
         background-size: 100%;
@@ -1261,7 +1261,7 @@ aside a .red{
 
 /***********MOVIL***********/
 
-@media (max-width: 320px){
+@media (max-width: 480px){
 
         
         header h1 a{
